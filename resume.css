@@ -1,0 +1,80 @@
+body{
+    line-height:1.2;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.side-panel{
+    background-color:aliceblue;
+    width:800px;
+}
+.profile-pic{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin:auto;
+    border:white 4px solid;
+}
+.side-panel h1{
+    text-align: center;
+    color:#a5eaeb;
+}
+
+:is(.side-panel,.personal-info) :is(p,address,li,a){
+    color:#00787a;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.side-panel h2{
+    color:#1ca9acba;
+    text-align: center;
+}
+.main{
+    padding: 20px;
+    margin:0;
+}
+#main-content{
+    display:flex;
+    flex-direction:column;
+    line-height:1.6;
+}
+@media (min-width:768px){
+    .main{
+        display:flex;
+    }
+    .side-panel{
+        flex:0 0 40%;   
+    }
+    #main-content{
+        flex:1;
+        padding-left:20px;
+
+    }
+}
+h1,h2,a{
+    color:#1A3D6E;
+    text-decoration: none;
+
+}
+i{
+    color:#1A3D6E;
+}
+#name{
+    color:#1A3D6E;
+    text-align: center;
+}
+@media (max-width:767px){
+    .side-panel{
+        width:100%;
+    #main-content{
+        width:100%;
+        padding:0;
+    }
+}}
